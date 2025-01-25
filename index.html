@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js"
+        integrity="sha256-mvTaORw+RTgKnX6ZHT4P5Sc9DNP2TBpSGII7F3sT8iE=" crossorigin="anonymous" as="script">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.js"
+        integrity="sha256-mvTaORw+RTgKnX6ZHT4P5Sc9DNP2TBpSGII7F3sT8iE=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7b12bcc245.js" crossorigin="anonymous"></script>
-    <title>Wedding Invite</title>
+    <title>Wedding Invitation</title>
 </head>
 <body>
 
 
     <nav>
-        <input type="checkbox" id="check">
+        <input type="checkbox" id="check" />
         <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
+            <img src="./assets/ganesh.png" alt="Lord Ganesh" class="ganesh-icon" aria-hidden="true" width='60px'>
         </label>
-        <label class="logo">A&G</label>
-        <ul class="text">
-            <li><a href="#story" onclick="myFunction()">OUR STORY</a></li>
-            <li><a href="#stay" onclick="myFunction()">TRAVEL & STAY</a></li>
-            <li><a href="#registry" onclick="myFunction()">PROMISES</a></li>
-        </ul>
+        <label class="logo">R&G</label>
     </nav>
-
 
     <div class="home hz-margin">
         <h3>We'er getting married</h3>
-        <h1>Aman. & Gur.</h1>
+        <h1>Raman. & Gayatri.</h1>
         <div class="container-out">
             
             <div class="container-in text">
-                Friday, Oct. 20, 2023 <br>
-                ITC Sonar Bangla, Kolkata
+                Wednesday, Feb. 12, 2025 <br>
+                Hyderabad, Telangana
 
-                <button class="huge-btn">RSVP</button>
+                <button class="huge-btn button"onclick="addToCalender()">Save the Date</button>
             </div>
             <div class="home-img" id="home-img-lg"></div>
         </div>
@@ -49,12 +47,35 @@
         <div class="timeline-container">
             <div class="timeline-img"></div>
             <div class="timings">
-                <h3>01.&nbsp &nbsp Ceremony</h3>
-                <div class="text">Friday, Oct. 20, 2023 <br>
-                    ITC Sonar Bangla, Kolkata</div>
-                <h3>02.&nbsp &nbsp Reception</h3>
-                <div class="text">Sunday, Oct. 22, 2023 <br>
-                    Poddar Vihar, Kolkata</div>
+                <!-- <h3>01.&nbsp &nbsp Wedding Ceremony</h3>
+                <div class="text">Wednesday, Feb. 12, 2025 <br>
+                    Hyderabad, Telangana</div> -->
+                <h2>Here’s the Celebration Lineup:</h2>
+
+                    <div class="event">
+                    <h3>💛 Haldi & Pellikoothuru</h3>
+                    <p><strong>When:</strong> Sunday, 9th February 2025, Morning 6:00 AM</p>
+                    <p><strong>Where:</strong> Lotus Homes, Block A, Flat No 103, Manikonda</p>
+                    <p><strong>Dress Code:</strong> Yellow! Let’s light up the morning with a burst of color and happiness.</p>
+                    <p><strong>What to Expect:</strong> A lively Haldi ceremony with turmeric fun, followed by the Pellikoothuru ritual and a delicious lunch. Let’s kickstart the celebrations with lots of laughter and cheer!</p>
+                    </div>
+
+                    <div class="event">
+                    <h3>💚 Mehendi Vibes</h3>
+                    <p><strong>When:</strong> Monday, 10th February 2025, Evening onwards</p>
+                    <p><strong>Dress Code:</strong> Green! Let’s add a little extra color to the evening and make it as fresh and lively as the mehendi designs!</p>
+                    <p><strong>Where:</strong> Lotus Homes, Block A, Flat No 103, Manikonda</p>
+                    <p><strong>What to Expect:</strong> An evening filled with stunning mehendi designs, soulful music, endless conversations, and delightful food. A relaxed, fun-filled evening to unwind before the big day!</p>
+                    </div>
+
+                    <div class="event">
+                    <h3>💍 The Wedding Day</h3>
+                    <p><strong>When:</strong> Wednesday, 12th February 2025</p>
+                    <p><strong>✨ Muhurtham Time:</strong> 9:23 PM</p>
+                    <p><strong>✨ Where:</strong> Varaahi Banquet, Level 3, SLN Terminus, Jayabheri Enclave, Gachibowli, Hyderabad</p>
+                    <p><strong>🍴 Dinner:</strong> From 8 PM onwards</p>
+                    </div>
+
             </div>
         </div>
     </div>
@@ -62,15 +83,6 @@
 
     <div class="v-reposition-container">
         <div class="h-reposition-container">
-
-
-            <div id="story" class="hz-margin">
-                <h3 class="reveal">Not Just an <br>
-                    Ordinary Love Story
-                </h3>
-                <p class="text reveal">We met on ferry. Not sure if the kids remember that one. His female housemates encouraged him to get on it - he wasn't keen, but one night we ended up chatting and the next day we met up at the Tellypara Ghat. We spent nine hours together by the river, and I bought him a cotton candy and he says that's how he knew I was the one.</p>
-            </div>
-
 
             <div class="gallery hz-margin reveal">
                 <div class="gallery-img"></div>
@@ -81,14 +93,14 @@
 
             <div class="quote reveal">
                 <h1>“To the world you are one person, but to one person you are the world”.</h1>
-                <div class="author text">Anonymous</div>
+                <div class="author text"> - Raman</div>
             </div>
 
 
             <div class="hands" id="parallax1"></div>
 
 
-            <div id="stay">
+            <!-- <div id="stay">
                 <h2 class="reveal">Travel and Stay</h2>
                 <div class="stay-container reveal">
                     <div class="stay-item">
@@ -113,10 +125,25 @@
                         <div class="text links">LODGING OPTIONS</div>
                     </div>
                 </div>
+            </div> -->
+            <div id="stay">
+                <h2 class="reveal">Venue</h2>
+                <div class="stay-container reveal">
+                    <iframe class="stay-item"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34977.0044735216!2d78.34089373224569!3d17.436354344579698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93202e77ddd1%3A0xc07c3078668d7808!2sVaaraahi%20Banquets%20and%20Conference%20Center!5e0!3m2!1sen!2sin!4v1737745665482!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div id="go-to-venue">
+                    <a href="https://www.google.com/maps/dir/?api=1&origin=My+Location&destination=Vaaraahi+Banquets+and+Conference+Center,+Level+3,+SLN+Terminus,+Jayabheri+Enclave,+Gachibowli,+Hyderabad,+Telangana+500032"
+                        target="_blank" data-aos="zoom-in">
+                        Go to Venue
+                    </a>
+            
+                </div>
             </div>
 
-
-            <div id="registry">
+            <!-- <div id="registry">
                 <div class="registry-container reveal">
                     <h3>Promises</h3>
                     <div class="text">
@@ -125,21 +152,21 @@
                     <button class="huge-btn text">BLESS US</button>
                 </div>
                 <div class="registry-img registry-img-lg" id="parallax2"></div>
-            </div>
+            </div> -->
             <div class="registry-img registry-img-sm"></div>
 
 
             <div class="parting-message reveal">
-                <h1>Hope to See You!</h1>
-                <button class="huge-btn">RSVP</button>
+                <h1>Hope to See You! 🤝 🤝</h1>
             </div>
 
 
-            <footer>
+            <footer class="footer">
                 <h2>Give us a Call</h2>
-                <h2>Amandeep: 123-456-7890</h2>
-                <h2>Gurpreet: 123-456-7890</h2>
-                <div class="text">© 2023 for Aman and Gur. Made by <a href="https://twitter.com/NathArchak" class="text">@NathArchak</a></div>
+                <h2>Raman : 8106428106</h2>
+                <h2>Gayatri : 8639956588 </h2>
+                <h2>Raman & Gayatri</h2>
+                <div class="text">Made with L♥️VE</div>
             </footer>
         </div>
     </div>
