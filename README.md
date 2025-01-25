@@ -57,3 +57,4 @@ This project has been completed. There is no plans of any further working over t
 ## Preview of the Webpage
 ### Warning: Certain elements are missing(like navbar) and parallax effect cannot be presented in this screenshot. It's recommended to clone the project and view.
 ![127 0 0 1_5500_index html (2)](https://user-images.githubusercontent.com/112867859/209858898-aad8b895-f5ff-4a18-9afd-d1ac80668bf7.png)
+# wedding-invite
